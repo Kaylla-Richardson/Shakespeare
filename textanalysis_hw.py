@@ -24,7 +24,7 @@ st.sidebar.header("Word Count Settings")
 min_word = st.sidebar.slider("Minimum Count of Words", 5, 100, 40, 5)
 
 # Creating a dictionary not a list 
-books = {" ":" ","A Mid Summer Night's Dream":"data/summer.txt","The Merchant of Venice":"data/merchant.txt","Romeo and Juliet":"data/romeo.txt"}
+books = {" ":" ","A Mid Summer Night's Dream":"summer.txt","The Merchant of Venice":"merchant.txt","Romeo and Juliet":"romeo.txt"}
 
 image = st.selectbox("Choose a txt file", books.keys())
 image = books.get(image)
